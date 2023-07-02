@@ -1,0 +1,286 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+projek uas
+</name>
+</assembly>
+<members>
+<member name="T:projek_uas.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:projek_uas.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:projek_uas.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:projek_uas.PemakaianBahanDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:projek_uas.PemakaianBahanDataSet.PemakaianBahanDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:projek_uas.PemakaianBahanDataSet.PemakaianBahanRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:projek_uas.PemakaianBahanDataSet.PemakaianBahanRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:projek_uas.PemakaianBahanDataSetTableAdapters.PemakaianBahanTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:projek_uas.PemakaianBahanDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:projek_uas.PemakaianBahanDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(projek_uas.PemakaianBahanDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:projek_uas.PemakaianBahanDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(projek_uas.PemakaianBahanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:projek_uas.PemakaianBahanDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(projek_uas.PemakaianBahanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:projek_uas.PemakaianBahanDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:projek_uas.PemakaianBahanDataSetTableAdapters.TableAdapterManager.UpdateAll(projek_uas.PemakaianBahanDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:projek_uas.PemakaianBahanDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:projek_uas.PemakaianBahanDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:projek_uas.PembelianBahanDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:projek_uas.PembelianBahanDataSet.PembelianBahanDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:projek_uas.PembelianBahanDataSet.PembelianBahanRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:projek_uas.PembelianBahanDataSet.PembelianBahanRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:projek_uas.PembelianBahanDataSetTableAdapters.PembelianBahanTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:projek_uas.PembelianBahanDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:projek_uas.PembelianBahanDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(projek_uas.PembelianBahanDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:projek_uas.PembelianBahanDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(projek_uas.PembelianBahanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:projek_uas.PembelianBahanDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(projek_uas.PembelianBahanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:projek_uas.PembelianBahanDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:projek_uas.PembelianBahanDataSetTableAdapters.TableAdapterManager.UpdateAll(projek_uas.PembelianBahanDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:projek_uas.PembelianBahanDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:projek_uas.PembelianBahanDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:projek_uas.PenjualanDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:projek_uas.PenjualanDataSet.PenjualanDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:projek_uas.PenjualanDataSet.PenjualanRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:projek_uas.PenjualanDataSet.PenjualanRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:projek_uas.PenjualanDataSetTableAdapters.PenjualanTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:projek_uas.PenjualanDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:projek_uas.PenjualanDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(projek_uas.PenjualanDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:projek_uas.PenjualanDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(projek_uas.PenjualanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:projek_uas.PenjualanDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(projek_uas.PenjualanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:projek_uas.PenjualanDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:projek_uas.PenjualanDataSetTableAdapters.TableAdapterManager.UpdateAll(projek_uas.PenjualanDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:projek_uas.PenjualanDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:projek_uas.PenjualanDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:projek_uas.PeralatanDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:projek_uas.PeralatanDataSet.TransaksiPeralatanDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:projek_uas.PeralatanDataSet.TransaksiPeralatanRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:projek_uas.PeralatanDataSet.TransaksiPeralatanRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:projek_uas.PeralatanDataSetTableAdapters.TransaksiPeralatanTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:projek_uas.PeralatanDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:projek_uas.PeralatanDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(projek_uas.PeralatanDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:projek_uas.PeralatanDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(projek_uas.PeralatanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:projek_uas.PeralatanDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(projek_uas.PeralatanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:projek_uas.PeralatanDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:projek_uas.PeralatanDataSetTableAdapters.TableAdapterManager.UpdateAll(projek_uas.PeralatanDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:projek_uas.PeralatanDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:projek_uas.PeralatanDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

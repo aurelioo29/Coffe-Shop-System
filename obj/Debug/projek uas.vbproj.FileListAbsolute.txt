@@ -1,0 +1,171 @@
+D:\projek uas\obj\Debug\projek uas.vbproj.AssemblyReference.cache
+D:\projek uas\obj\Debug\projek uas.vbproj.SuggestedBindingRedirects.cache
+D:\projek uas\obj\Debug\projek_uas.login.resources
+D:\projek uas\obj\Debug\projek_uas.Resources.resources
+D:\projek uas\obj\Debug\projek uas.vbproj.GenerateResource.cache
+D:\projek uas\obj\Debug\projek uas.vbproj.CoreCompileInputs.cache
+D:\projek uas\bin\Debug\x86\SqlServerSpatial160.dll
+D:\projek uas\bin\Debug\x64\SqlServerSpatial160.dll
+D:\projek uas\bin\Debug\projek uas.exe.config
+D:\projek uas\bin\Debug\projek uas.exe
+D:\projek uas\bin\Debug\projek uas.pdb
+D:\projek uas\bin\Debug\projek uas.xml
+D:\projek uas\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\projek uas\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\projek uas\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\projek uas\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\projek uas\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\projek uas\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\projek uas\bin\Debug\EnvDTE.dll
+D:\projek uas\bin\Debug\stdole.dll
+D:\projek uas\bin\Debug\EnvDTE.xml
+D:\projek uas\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\projek uas\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\projek uas\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\projek uas\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\projek uas\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\projek uas\obj\Debug\projek uas.vbproj.CopyComplete
+D:\projek uas\obj\Debug\projek uas.exe
+D:\projek uas\obj\Debug\projek uas.xml
+D:\projek uas\obj\Debug\projek uas.pdb
+D:\projek uas\obj\Debug\projek_uas.menu1.resources
+D:\projek uas\obj\Debug\projek_uas.masterpengguna.resources
+D:\projek uas\obj\Debug\projek_uas.menuutama.resources
+D:\projek uas\obj\Debug\projek_uas.mastermenu.resources
+D:\projek uas\obj\Debug\projek_uas.mastermenu1.resources
+D:\projek uas\obj\Debug\projek_uas.mastersupplier.resources
+C:\Users\user\Downloads\projek uas\bin\Debug\x86\SqlServerSpatial160.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\x64\SqlServerSpatial160.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\projek uas.exe.config
+C:\Users\user\Downloads\projek uas\bin\Debug\projek uas.exe
+C:\Users\user\Downloads\projek uas\bin\Debug\projek uas.pdb
+C:\Users\user\Downloads\projek uas\bin\Debug\projek uas.xml
+C:\Users\user\Downloads\projek uas\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\EnvDTE.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\stdole.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Downloads\projek uas\obj\Debug\projek uas.vbproj.AssemblyReference.cache
+C:\Users\user\Downloads\projek uas\obj\Debug\projek uas.vbproj.SuggestedBindingRedirects.cache
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.login.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.mastermenu.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.mastermenu1.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.masterpengguna.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.mastersupplier.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.menu1.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.Resources.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.menuutama.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.transaksipembelianperalatan.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek uas.vbproj.GenerateResource.cache
+C:\Users\user\Downloads\projek uas\obj\Debug\projek uas.vbproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\projek uas\obj\Debug\projek uas.vbproj.CopyComplete
+C:\Users\user\Downloads\projek uas\obj\Debug\projek uas.exe
+C:\Users\user\Downloads\projek uas\obj\Debug\projek uas.xml
+C:\Users\user\Downloads\projek uas\obj\Debug\projek uas.pdb
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.transaksipenjualan.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.transaksipenjualan1.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.transaksipembelianbahan.resources
+C:\Users\user\Downloads\projek uas\obj\Debug\projek_uas.transaksipemakainbahan.resources
+C:\Users\User\Downloads\projek uas\bin\Debug\EnvDTE.xml
+C:\Users\User\Downloads\projek uas\obj\Debug\projek_uas.laporanpenjualan.resources
+C:\Users\User\Downloads\projek uas\obj\Debug\projek_uas.laporanpembelianperalatan.resources
+C:\Users\User\Downloads\projek uas\obj\Debug\projek_uas.laporanpembelianbahan.resources
+C:\Users\User\Downloads\projek uas\obj\Debug\projek_uas.laporanpemakaianbahan.resources

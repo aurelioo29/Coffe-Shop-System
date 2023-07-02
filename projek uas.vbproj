@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props" Condition="Exists('packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CDCA1B9-60DF-425C-ACA9-DF681D3C0891}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>projek_uas.My.MyApplication</StartupObject>
+    <RootNamespace>projek_uas</RootNamespace>
+    <AssemblyName>projek uas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>projek uas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>projek uas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="laporanpemakaianbahan.Designer.vb">
+      <DependentUpon>laporanpemakaianbahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanpemakaianbahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanpembelianbahan.Designer.vb">
+      <DependentUpon>laporanpembelianbahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanpembelianbahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanpembelianperalatan.Designer.vb">
+      <DependentUpon>laporanpembelianperalatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanpembelianperalatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanpenjualan.Designer.vb">
+      <DependentUpon>laporanpenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanpenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mastermenu.Designer.vb">
+      <DependentUpon>mastermenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mastermenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterpengguna.Designer.vb">
+      <DependentUpon>masterpengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="masterpengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mastermenu1.Designer.vb">
+      <DependentUpon>mastermenu1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mastermenu1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mastersupplier.Designer.vb">
+      <DependentUpon>mastersupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mastersupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu1.Designer.vb">
+      <DependentUpon>menu1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menu1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="menuutama.Designer.vb">
+      <DependentUpon>menuutama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuutama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PemakaianBahanDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PemakaianBahanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PembelianBahanDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PembelianBahanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PenjualanDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PenjualanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PeralatanDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PeralatanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="transaksipemakainbahan.Designer.vb">
+      <DependentUpon>transaksipemakainbahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksipemakainbahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksipembelianbahan.Designer.vb">
+      <DependentUpon>transaksipembelianbahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksipembelianbahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksipembelianperalatan.Designer.vb">
+      <DependentUpon>transaksipembelianperalatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksipembelianperalatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksipenjualan.Designer.vb">
+      <DependentUpon>transaksipenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksipenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksipenjualan1.Designer.vb">
+      <DependentUpon>transaksipenjualan1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transaksipenjualan1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="laporanpemakaianbahan.resx">
+      <DependentUpon>laporanpemakaianbahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanpembelianbahan.resx">
+      <DependentUpon>laporanpembelianbahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanpembelianperalatan.resx">
+      <DependentUpon>laporanpembelianperalatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanpenjualan.resx">
+      <DependentUpon>laporanpenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mastermenu.resx">
+      <DependentUpon>mastermenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mastermenu1.resx">
+      <DependentUpon>mastermenu1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterpengguna.resx">
+      <DependentUpon>masterpengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mastersupplier.resx">
+      <DependentUpon>mastersupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu1.resx">
+      <DependentUpon>menu1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuutama.resx">
+      <DependentUpon>menuutama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PemakaianBahan.rdlc" />
+    <EmbeddedResource Include="reportpembelianbahan.rdlc" />
+    <EmbeddedResource Include="reportpembelianperalatan.rdlc" />
+    <EmbeddedResource Include="reportpenjualan.rdlc" />
+    <EmbeddedResource Include="transaksipemakainbahan.resx">
+      <DependentUpon>transaksipemakainbahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksipembelianbahan.resx">
+      <DependentUpon>transaksipembelianbahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksipembelianperalatan.resx">
+      <DependentUpon>transaksipembelianperalatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksipenjualan.resx">
+      <DependentUpon>transaksipenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transaksipenjualan1.resx">
+      <DependentUpon>transaksipenjualan1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="PemakaianBahanDataSet.xsc">
+      <DependentUpon>PemakaianBahanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PemakaianBahanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PemakaianBahanDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PemakaianBahanDataSet.xss">
+      <DependentUpon>PemakaianBahanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PembelianBahanDataSet.xsc">
+      <DependentUpon>PembelianBahanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PembelianBahanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PembelianBahanDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PembelianBahanDataSet.xss">
+      <DependentUpon>PembelianBahanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PenjualanDataSet.xsc">
+      <DependentUpon>PenjualanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PenjualanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PenjualanDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PenjualanDataSet.xss">
+      <DependentUpon>PenjualanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PeralatanDataSet.xsc">
+      <DependentUpon>PeralatanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PeralatanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PeralatanDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PeralatanDataSet.xss">
+      <DependentUpon>PeralatanDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props'))" />
+  </Target>
+</Project>
