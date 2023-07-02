@@ -25,5 +25,9 @@
 
 Bagaimana cara menjalankan nya? Dengan Klik `projek uas.sln` dan Run dengan shortcut `F5`
 
-## 📸 Screenshoot 📸
+## ⚒️ Tools ⚒️
+- Microsoft Visual 2022
+- Sql Server Management Studio Management Studio 19
+
+## 📸 Preview 📸
 https://github.com/Haloio29/uas-vb/assets/109930573/0f609bd1-8859-428f-ae40-ee69838569dc
