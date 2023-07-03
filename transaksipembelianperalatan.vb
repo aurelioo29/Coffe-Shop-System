@@ -25,7 +25,7 @@ Public Class transaksipembelianperalatan
 
         If drOpen.HasRows.ToString Then
             While drOpen.Read
-                DataGridView1.Rows.Add(drOpen("nama").ToString, drOpen("jumlah").ToString, drOpen("total").ToString, drOpen("tanggal").ToString)
+                DataGridView1.Rows.Add(drOpen("id_pembelian").ToString, drOpen("nama").ToString, drOpen("jumlah").ToString, drOpen("total").ToString, drOpen("tanggal").ToString)
             End While
         End If
         drOpen.Close()
@@ -87,7 +87,8 @@ Public Class transaksipembelianperalatan
                     "harga = " & CDbl(Trim(txtharga.Text)) & "," &
                     "jumlah = " & CInt(Trim(txtperjumlah.Text)) & "," &
                     "total = " & CDbl(Trim(txttotal.Text)) & "," &
-                    "tanggal = '" & Format(DateTimePicker1.Value, "yyyy-MM-dd") &
+                    "tanggal = '" & Format(DateTimePicker1.Value, "yyyy-MM-dd") & "'," &
+                    "gambar = '" & Trim(txtgambar.Text) & "'" &
                     "WHERE id_pembelian = '" & Trim(txtid.Text) & "'"
         Else
             query = "INSERT INTO TransaksiPeralatan VALUES('" & Trim(txtid.Text) & "', 
@@ -95,6 +96,7 @@ Public Class transaksipembelianperalatan
                     " & CDbl(Trim(txtharga.Text)) & ",
                     " & CInt(Trim(txtperjumlah.Text)) & ",
                     " & CDbl(Trim(txttotal.Text)) & ",
+                    '" & Trim(txtgambar.Text) & "',
                     '" & Format(DateTimePicker1.Value, "yyyy-MM-dd") & "')"
         End If
         drOpen.Close()
@@ -181,7 +183,6 @@ Public Class transaksipembelianperalatan
                     txtharga.Text = (drOpen("harga")).ToString
                     txtperjumlah.Text = (drOpen("jumlah")).ToString
                     txttotal.Text = (drOpen("total")).ToString
-                    DateTimePicker1.Value = drOpen("date").ToString
                 End While
             Else
                 'clear()

@@ -20,7 +20,7 @@ Public Class menu1
         PemakaianBahanBakuToolStripMenuItem1.Enabled = False
     End Sub
     Private Sub LogOutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogOutToolStripMenuItem.Click
-        Me.Close()
+        Me.Hide()
         login.Show()
     End Sub
 

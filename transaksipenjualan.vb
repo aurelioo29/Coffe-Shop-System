@@ -78,7 +78,6 @@ Public Class transaksipenjualan
     Private Sub transaksipenjualan_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         txtnama.Enabled = False
         txtharga.Enabled = False
-        txtid.Enabled = False
         txtkembali.Enabled = False
     End Sub
 
@@ -162,13 +161,8 @@ Public Class transaksipenjualan
     End Sub
 
     Private Sub btnhitung_Click(sender As Object, e As EventArgs) Handles btnhitung.Click
-        Dim bil1, bil2 As Integer
-
-        bil1 = txtqty.Text
-        bil2 = txtharga.Text
-
-        txttotal.Text = bil1 * bil2
-        txttotal.Text = Format(CDec(txttotal.Text), "##,##0.00")
+        txttotal.Text = Val(txtqty.Text) * Val(txtharga.Text)
+        txttotal.Text = Format(CDec(txttotal.Text))
     End Sub
 
     Private Sub hitung()
@@ -176,17 +170,12 @@ Public Class transaksipenjualan
         For i = 0 To DataGridView1.Rows.Count - 1
             xtotal = xtotal + DataGridView1.Rows(i).Cells(4).Value
         Next
-        txtbelanja.Text = Format(xtotal, "##,##0.00")
+        txtbelanja.Text = Format(xtotal)
     End Sub
 
     Private Sub btnkembali_Click(sender As Object, e As EventArgs) Handles btnkembali.Click
-        Dim bil1, bil2 As Integer
-
-        bil1 = txtbayar.Text
-        bil2 = txtbelanja.Text
-
-        txtkembali.Text = bil1 - bil2
-        txtkembali.Text = Format(CDec(txtkembali.Text), "##,##0.00")
+        txtkembali.Text = Val(txtbayar.Text) - Val(txtbelanja.Text)
+        txtkembali.Text = Format(CDec(txtkembali.Text))
     End Sub
 
     Private Sub txtbayar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtbayar.KeyPress
@@ -200,7 +189,7 @@ Public Class transaksipenjualan
         If Not IsNumeric(Trim(txtharga.Text)) Then
             txtharga.Text = 0
         End If
-        txtharga.Text = Format(CDec(txtharga.Text), "##,##0.00")
+        txtharga.Text = Format(CDec(txtharga.Text))
     End Sub
     '================================[ PRINT AREA ]================================
     Sub ubahpanjang()
@@ -220,7 +209,6 @@ Public Class transaksipenjualan
         Me.Hide()
         login.Show()
     End Sub
-
     Private Sub txtprint_Click(sender As Object, e As EventArgs) Handles txtprint.Click
         ubahpanjang()
         PPD.Document = PD
@@ -376,7 +364,7 @@ Public Class transaksipenjualan
         cleardetailbarang()
         txtidbarang.Select()
     End Sub
-    Private Sub GroupBox2_MouseClick(sender As Object, e As MouseEventArgs) Handles GroupBox2.MouseClick
+    Private Sub GroupBox4_MouseClick(sender As Object, e As MouseEventArgs) Handles GroupBox4.MouseClick
         input()
         hitung()
     End Sub

@@ -76,13 +76,16 @@ Partial Class transaksipenjualan1
         'Column5
         '
         Me.Column5.HeaderText = "Sub Harga"
+        Me.Column5.MinimumWidth = 6
         Me.Column5.Name = "Column5"
+        Me.Column5.Width = 125
         '
         'txtbayar
         '
-        Me.txtbayar.Location = New System.Drawing.Point(6, 47)
+        Me.txtbayar.Location = New System.Drawing.Point(8, 58)
+        Me.txtbayar.Margin = New System.Windows.Forms.Padding(4)
         Me.txtbayar.Name = "txtbayar"
-        Me.txtbayar.Size = New System.Drawing.Size(156, 20)
+        Me.txtbayar.Size = New System.Drawing.Size(207, 22)
         Me.txtbayar.TabIndex = 0
         '
         'GroupBox3
@@ -90,9 +93,11 @@ Partial Class transaksipenjualan1
         Me.GroupBox3.BackColor = System.Drawing.Color.PeachPuff
         Me.GroupBox3.Controls.Add(Me.btnkembali)
         Me.GroupBox3.Controls.Add(Me.txtkembali)
-        Me.GroupBox3.Location = New System.Drawing.Point(559, 416)
+        Me.GroupBox3.Location = New System.Drawing.Point(745, 512)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(169, 100)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox3.Size = New System.Drawing.Size(225, 123)
         Me.GroupBox3.TabIndex = 77
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "GroupBox3"
@@ -100,27 +105,30 @@ Partial Class transaksipenjualan1
         'btnkembali
         '
         Me.btnkembali.BackColor = System.Drawing.Color.DarkOrange
-        Me.btnkembali.Location = New System.Drawing.Point(5, 68)
+        Me.btnkembali.Location = New System.Drawing.Point(7, 84)
+        Me.btnkembali.Margin = New System.Windows.Forms.Padding(4)
         Me.btnkembali.Name = "btnkembali"
-        Me.btnkembali.Size = New System.Drawing.Size(157, 23)
+        Me.btnkembali.Size = New System.Drawing.Size(209, 28)
         Me.btnkembali.TabIndex = 23
         Me.btnkembali.Text = "Kembali"
         Me.btnkembali.UseVisualStyleBackColor = False
         '
         'txtkembali
         '
-        Me.txtkembali.Location = New System.Drawing.Point(6, 31)
+        Me.txtkembali.Location = New System.Drawing.Point(8, 38)
+        Me.txtkembali.Margin = New System.Windows.Forms.Padding(4)
         Me.txtkembali.Name = "txtkembali"
-        Me.txtkembali.Size = New System.Drawing.Size(156, 20)
+        Me.txtkembali.Size = New System.Drawing.Size(207, 22)
         Me.txtkembali.TabIndex = 0
         '
         'btnclear
         '
         Me.btnclear.BackgroundImage = CType(resources.GetObject("btnclear.BackgroundImage"), System.Drawing.Image)
         Me.btnclear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnclear.Location = New System.Drawing.Point(619, 522)
+        Me.btnclear.Location = New System.Drawing.Point(825, 642)
+        Me.btnclear.Margin = New System.Windows.Forms.Padding(4)
         Me.btnclear.Name = "btnclear"
-        Me.btnclear.Size = New System.Drawing.Size(45, 45)
+        Me.btnclear.Size = New System.Drawing.Size(60, 55)
         Me.btnclear.TabIndex = 79
         Me.btnclear.UseVisualStyleBackColor = True
         '
@@ -128,18 +136,20 @@ Partial Class transaksipenjualan1
         '
         Me.txtprint.BackgroundImage = CType(resources.GetObject("txtprint.BackgroundImage"), System.Drawing.Image)
         Me.txtprint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.txtprint.Location = New System.Drawing.Point(683, 522)
+        Me.txtprint.Location = New System.Drawing.Point(911, 642)
+        Me.txtprint.Margin = New System.Windows.Forms.Padding(4)
         Me.txtprint.Name = "txtprint"
-        Me.txtprint.Size = New System.Drawing.Size(45, 45)
+        Me.txtprint.Size = New System.Drawing.Size(60, 55)
         Me.txtprint.TabIndex = 78
         Me.txtprint.UseVisualStyleBackColor = True
         '
         'btnhitung
         '
         Me.btnhitung.BackColor = System.Drawing.Color.DarkOrange
-        Me.btnhitung.Location = New System.Drawing.Point(276, 86)
+        Me.btnhitung.Location = New System.Drawing.Point(368, 106)
+        Me.btnhitung.Margin = New System.Windows.Forms.Padding(4)
         Me.btnhitung.Name = "btnhitung"
-        Me.btnhitung.Size = New System.Drawing.Size(56, 23)
+        Me.btnhitung.Size = New System.Drawing.Size(75, 28)
         Me.btnhitung.TabIndex = 25
         Me.btnhitung.Text = "Hitung"
         Me.btnhitung.UseVisualStyleBackColor = False
@@ -148,26 +158,29 @@ Partial Class transaksipenjualan1
         '
         Me.label11.AutoSize = True
         Me.label11.BackColor = System.Drawing.Color.PeachPuff
-        Me.label11.Location = New System.Drawing.Point(183, 71)
+        Me.label11.Location = New System.Drawing.Point(244, 87)
+        Me.label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.label11.Name = "label11"
-        Me.label11.Size = New System.Drawing.Size(68, 13)
+        Me.label11.Size = New System.Drawing.Size(85, 16)
         Me.label11.TabIndex = 67
         Me.label11.Text = "Total Barang"
         '
         'txttotal
         '
-        Me.txttotal.Location = New System.Drawing.Point(170, 86)
+        Me.txttotal.Location = New System.Drawing.Point(227, 106)
+        Me.txttotal.Margin = New System.Windows.Forms.Padding(4)
         Me.txttotal.Name = "txttotal"
-        Me.txttotal.Size = New System.Drawing.Size(100, 20)
+        Me.txttotal.Size = New System.Drawing.Size(132, 22)
         Me.txttotal.TabIndex = 64
         '
         'label10
         '
         Me.label10.AutoSize = True
         Me.label10.BackColor = System.Drawing.Color.PeachPuff
-        Me.label10.Location = New System.Drawing.Point(51, 71)
+        Me.label10.Location = New System.Drawing.Point(68, 87)
+        Me.label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.label10.Name = "label10"
-        Me.label10.Size = New System.Drawing.Size(73, 13)
+        Me.label10.Size = New System.Drawing.Size(90, 16)
         Me.label10.TabIndex = 66
         Me.label10.Text = "Harga Satuan"
         '
@@ -175,24 +188,27 @@ Partial Class transaksipenjualan1
         '
         Me.Label.AutoSize = True
         Me.Label.BackColor = System.Drawing.Color.PeachPuff
-        Me.Label.Location = New System.Drawing.Point(293, 25)
+        Me.Label.Location = New System.Drawing.Point(391, 31)
+        Me.Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label.Name = "Label"
-        Me.Label.Size = New System.Drawing.Size(23, 13)
+        Me.Label.Size = New System.Drawing.Size(27, 16)
         Me.Label.TabIndex = 65
         Me.Label.Text = "Qty"
         '
         'txtharga
         '
-        Me.txtharga.Location = New System.Drawing.Point(38, 86)
+        Me.txtharga.Location = New System.Drawing.Point(51, 106)
+        Me.txtharga.Margin = New System.Windows.Forms.Padding(4)
         Me.txtharga.Name = "txtharga"
-        Me.txtharga.Size = New System.Drawing.Size(100, 20)
+        Me.txtharga.Size = New System.Drawing.Size(132, 22)
         Me.txtharga.TabIndex = 63
         '
         'txtqty
         '
-        Me.txtqty.Location = New System.Drawing.Point(258, 41)
+        Me.txtqty.Location = New System.Drawing.Point(344, 50)
+        Me.txtqty.Margin = New System.Windows.Forms.Padding(4)
         Me.txtqty.Name = "txtqty"
-        Me.txtqty.Size = New System.Drawing.Size(100, 20)
+        Me.txtqty.Size = New System.Drawing.Size(132, 22)
         Me.txtqty.TabIndex = 62
         '
         'Label5
@@ -200,9 +216,10 @@ Partial Class transaksipenjualan1
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(108, 9)
+        Me.Label5.Location = New System.Drawing.Point(144, 11)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(526, 55)
+        Me.Label5.Size = New System.Drawing.Size(654, 70)
         Me.Label5.TabIndex = 80
         Me.Label5.Text = "Penjualan Coffe Shop"
         '
@@ -221,9 +238,11 @@ Partial Class transaksipenjualan1
         Me.GroupBox4.Controls.Add(Me.txtnama)
         Me.GroupBox4.Controls.Add(Me.txtqty)
         Me.GroupBox4.Controls.Add(Me.Label8)
-        Me.GroupBox4.Location = New System.Drawing.Point(9, 80)
+        Me.GroupBox4.Location = New System.Drawing.Point(12, 98)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(388, 118)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox4.Size = New System.Drawing.Size(517, 145)
         Me.GroupBox4.TabIndex = 81
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Detail BARANG"
@@ -232,34 +251,38 @@ Partial Class transaksipenjualan1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.PeachPuff
-        Me.Label1.Location = New System.Drawing.Point(21, 25)
+        Me.Label1.Location = New System.Drawing.Point(28, 31)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "ID Barang"
         '
         'txtidbarang
         '
-        Me.txtidbarang.Location = New System.Drawing.Point(6, 41)
+        Me.txtidbarang.Location = New System.Drawing.Point(8, 50)
+        Me.txtidbarang.Margin = New System.Windows.Forms.Padding(4)
         Me.txtidbarang.Name = "txtidbarang"
-        Me.txtidbarang.Size = New System.Drawing.Size(100, 20)
+        Me.txtidbarang.Size = New System.Drawing.Size(132, 22)
         Me.txtidbarang.TabIndex = 0
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.PeachPuff
-        Me.Label2.Location = New System.Drawing.Point(142, 25)
+        Me.Label2.Location = New System.Drawing.Point(189, 31)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 13)
+        Me.Label2.Size = New System.Drawing.Size(91, 16)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Nama Barang"
         '
         'txtnama
         '
-        Me.txtnama.Location = New System.Drawing.Point(127, 41)
+        Me.txtnama.Location = New System.Drawing.Point(169, 50)
+        Me.txtnama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtnama.Name = "txtnama"
-        Me.txtnama.Size = New System.Drawing.Size(100, 20)
+        Me.txtnama.Size = New System.Drawing.Size(132, 22)
         Me.txtnama.TabIndex = 1
         '
         'Label8
@@ -267,9 +290,10 @@ Partial Class transaksipenjualan1
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.PeachPuff
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(130, 70)
+        Me.Label8.Location = New System.Drawing.Point(173, 86)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(52, 55)
+        Me.Label8.Size = New System.Drawing.Size(65, 69)
         Me.Label8.TabIndex = 68
         Me.Label8.Text = "="
         '
@@ -277,9 +301,10 @@ Partial Class transaksipenjualan1
         '
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Location = New System.Drawing.Point(9, 571)
+        Me.Button1.Location = New System.Drawing.Point(12, 703)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(40, 40)
+        Me.Button1.Size = New System.Drawing.Size(53, 49)
         Me.Button1.TabIndex = 83
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -287,9 +312,11 @@ Partial Class transaksipenjualan1
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.PeachPuff
         Me.GroupBox2.Controls.Add(Me.txtbayar)
-        Me.GroupBox2.Location = New System.Drawing.Point(559, 310)
+        Me.GroupBox2.Location = New System.Drawing.Point(745, 382)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(169, 100)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Size = New System.Drawing.Size(225, 123)
         Me.GroupBox2.TabIndex = 75
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "GroupBox2"
@@ -297,15 +324,18 @@ Partial Class transaksipenjualan1
         'Column4
         '
         Me.Column4.HeaderText = "Harga Satuan"
+        Me.Column4.MinimumWidth = 6
         Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
         '
         'Button2
         '
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Location = New System.Drawing.Point(55, 571)
+        Me.Button2.Location = New System.Drawing.Point(73, 703)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(40, 40)
+        Me.Button2.Size = New System.Drawing.Size(53, 49)
         Me.Button2.TabIndex = 84
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -313,74 +343,83 @@ Partial Class transaksipenjualan1
         '
         Me.btnsave.BackgroundImage = CType(resources.GetObject("btnsave.BackgroundImage"), System.Drawing.Image)
         Me.btnsave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnsave.Location = New System.Drawing.Point(559, 522)
+        Me.btnsave.Location = New System.Drawing.Point(745, 642)
+        Me.btnsave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnsave.Name = "btnsave"
-        Me.btnsave.Size = New System.Drawing.Size(45, 45)
+        Me.btnsave.Size = New System.Drawing.Size(60, 55)
         Me.btnsave.TabIndex = 73
         Me.btnsave.UseVisualStyleBackColor = True
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(3, 14)
+        Me.Label7.Location = New System.Drawing.Point(4, 17)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(76, 13)
+        Me.Label7.Size = New System.Drawing.Size(97, 16)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Nama Pelayan"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(3, 45)
+        Me.Label6.Location = New System.Drawing.Point(4, 55)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(68, 13)
+        Me.Label6.Size = New System.Drawing.Size(83, 16)
         Me.Label6.TabIndex = 12
         Me.Label6.Text = "ID Penjualan"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(3, 67)
+        Me.Label4.Location = New System.Drawing.Point(4, 82)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(114, 13)
+        Me.Label4.Size = New System.Drawing.Size(138, 16)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Tanggal/Bulan/Tahun"
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(127, 14)
+        Me.ComboBox1.Location = New System.Drawing.Point(169, 17)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(184, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(244, 24)
         Me.ComboBox1.TabIndex = 16
         '
         'txtid
         '
-        Me.txtid.Location = New System.Drawing.Point(127, 41)
+        Me.txtid.Location = New System.Drawing.Point(169, 50)
+        Me.txtid.Margin = New System.Windows.Forms.Padding(4)
         Me.txtid.Name = "txtid"
-        Me.txtid.Size = New System.Drawing.Size(185, 20)
+        Me.txtid.Size = New System.Drawing.Size(245, 22)
         Me.txtid.TabIndex = 18
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(127, 67)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(169, 82)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(184, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(244, 22)
         Me.DateTimePicker1.TabIndex = 19
         '
         'txtpemesan
         '
-        Me.txtpemesan.Location = New System.Drawing.Point(127, 93)
+        Me.txtpemesan.Location = New System.Drawing.Point(169, 114)
+        Me.txtpemesan.Margin = New System.Windows.Forms.Padding(4)
         Me.txtpemesan.Name = "txtpemesan"
-        Me.txtpemesan.Size = New System.Drawing.Size(184, 20)
+        Me.txtpemesan.Size = New System.Drawing.Size(244, 22)
         Me.txtpemesan.TabIndex = 17
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(3, 93)
+        Me.Label3.Location = New System.Drawing.Point(4, 114)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(82, 13)
+        Me.Label3.Size = New System.Drawing.Size(105, 16)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Nama Pemesan"
         '
@@ -388,9 +427,11 @@ Partial Class transaksipenjualan1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.PeachPuff
         Me.GroupBox1.Controls.Add(Me.txtbelanja)
-        Me.GroupBox1.Location = New System.Drawing.Point(559, 204)
+        Me.GroupBox1.Location = New System.Drawing.Point(745, 251)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(169, 100)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(225, 123)
         Me.GroupBox1.TabIndex = 74
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
@@ -399,34 +440,43 @@ Partial Class transaksipenjualan1
         '
         Me.txtbelanja.AutoSize = True
         Me.txtbelanja.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtbelanja.Location = New System.Drawing.Point(0, 64)
+        Me.txtbelanja.Location = New System.Drawing.Point(0, 79)
+        Me.txtbelanja.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.txtbelanja.Name = "txtbelanja"
-        Me.txtbelanja.Size = New System.Drawing.Size(0, 31)
+        Me.txtbelanja.Size = New System.Drawing.Size(0, 39)
         Me.txtbelanja.TabIndex = 0
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
-        Me.DataGridView1.Location = New System.Drawing.Point(9, 204)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 251)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(544, 363)
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.Size = New System.Drawing.Size(725, 447)
         Me.DataGridView1.TabIndex = 76
         '
         'Column1
         '
         Me.Column1.HeaderText = "ID Barang"
+        Me.Column1.MinimumWidth = 6
         Me.Column1.Name = "Column1"
+        Me.Column1.Width = 125
         '
         'Column2
         '
         Me.Column2.HeaderText = "Nama Barang"
+        Me.Column2.MinimumWidth = 6
         Me.Column2.Name = "Column2"
+        Me.Column2.Width = 125
         '
         'Column3
         '
         Me.Column3.HeaderText = "Qty"
+        Me.Column3.MinimumWidth = 6
         Me.Column3.Name = "Column3"
+        Me.Column3.Width = 125
         '
         'GroupBox5
         '
@@ -439,20 +489,22 @@ Partial Class transaksipenjualan1
         Me.GroupBox5.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox5.Controls.Add(Me.txtpemesan)
         Me.GroupBox5.Controls.Add(Me.Label3)
-        Me.GroupBox5.Location = New System.Drawing.Point(403, 80)
+        Me.GroupBox5.Location = New System.Drawing.Point(537, 98)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(325, 117)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox5.Size = New System.Drawing.Size(433, 144)
         Me.GroupBox5.TabIndex = 82
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Detail PENJUALAN"
         '
         'transaksipenjualan1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(741, 615)
+        Me.ClientSize = New System.Drawing.Size(988, 757)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.btnclear)
         Me.Controls.Add(Me.txtprint)
@@ -466,6 +518,7 @@ Partial Class transaksipenjualan1
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox5)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "transaksipenjualan1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "transaksipenjualan1"

@@ -151,7 +151,6 @@ Public Class transaksipembelianbahan
     End Sub
 
     Private Sub transaksipembelianbahan_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        txtjumlah.Enabled = False
         jumlahbunga.Enabled = False
         jumlahhutang.Enabled = False
         totalhutang.Enabled = False
@@ -201,6 +200,7 @@ Public Class transaksipembelianbahan
 
     Private Sub txtharga_LostFocus(sender As Object, e As EventArgs) Handles txtharga.LostFocus
         If Not IsNumeric(Trim(txtharga.Text)) Then txtharga.Text = 0
+        txtjumlah.Text = Val(txtqty.Text) * Val(txtharga.Text)
     End Sub
     Private Sub dibayarhutang_LostFocus(sender As Object, e As EventArgs) Handles dibayarhutang.LostFocus
         If Not IsNumeric(Trim(dibayarhutang.Text)) Then dibayarhutang.Text = 0
@@ -358,4 +358,13 @@ Public Class transaksipembelianbahan
             drOpen.Close()
         End If
     End Sub
+
+    Private Sub txtqty_TextChanged(sender As Object, e As EventArgs) Handles txtqty.TextChanged
+
+    End Sub
+
+    Private Sub txtqty_LostFocus(sender As Object, e As EventArgs) Handles txtqty.LostFocus
+        txtjumlah.Text = Val(txtqty.Text) * Val(txtharga.Text)
+    End Sub
+
 End Class

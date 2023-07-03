@@ -82,45 +82,6 @@ Public Class transaksipenjualan1
         txtkembali.Enabled = False
     End Sub
 
-    Private Sub txtidbarang_KeyPress(sender As Object, e As KeyPressEventArgs)
-        If (e.KeyChar = Chr(13)) Then
-            If txtidbarang.Text = "" Then
-                MessageBox.Show("Isi terlebih dahulu Id Barang!!!", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Else
-                Dim cmdOpen As New SqlCommand
-
-                If conn.State = ConnectionState.Open Then conn.Close()
-                conn.Open()
-                cmdOpen.Connection = conn
-
-                query = "SELECT * FROM Menu WHERE id_menu = '" & txtidbarang.Text & "'"
-                cmdOpen.CommandText = query
-                cmdOpen.ExecuteNonQuery()
-
-                Dim drOpen As SqlDataReader = cmdOpen.ExecuteReader
-
-                If drOpen.Read Then
-                    kode = drOpen.Item("id_menu")
-                    txtnama.Text = drOpen.Item("nama")
-                    txtqty.Text = drOpen.Item("stok")
-                    jumlah = 1
-                    'txtharga.Text = drOpen.Item("harga")
-                    harga = drOpen.Item("harga")
-                    'txttotal.Text = jumlah * harga
-                    total = jumlah * harga
-
-                    txtqty.Text = jumlah
-                    txtharga.Text = harga
-                    txttotal.Text = total
-
-                    txtqty.Focus()
-                Else
-                    MessageBox.Show("Id Barang tersebut tidak ada di dalam database!!!", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                    txtidbarang.Text = ""
-                End If
-            End If
-        End If
-    End Sub
 
     Private Sub txtqty_KeyPress(sender As Object, e As KeyPressEventArgs)
         If Asc(e.KeyChar) <> Asc(vbBack) Then
@@ -160,33 +121,12 @@ Public Class transaksipenjualan1
             End While
         End If
     End Sub
-
-    Private Sub btnhitung_Click(sender As Object, e As EventArgs)
-        Dim bil1, bil2 As Integer
-
-        bil1 = txtqty.Text
-        bil2 = txtharga.Text
-
-        txttotal.Text = bil1 * bil2
-        txttotal.Text = Format(CDec(txttotal.Text), "##,##0.00")
-    End Sub
-
     Private Sub hitung()
         Dim xtotal As Decimal = 0
         For i = 0 To DataGridView1.Rows.Count - 1
             xtotal = xtotal + DataGridView1.Rows(i).Cells(4).Value
         Next
-        txtbelanja.Text = Format(xtotal, "##,##0.00")
-    End Sub
-
-    Private Sub btnkembali_Click(sender As Object, e As EventArgs)
-        Dim bil1, bil2 As Integer
-
-        bil1 = txtbayar.Text
-        bil2 = txtbelanja.Text
-
-        txtkembali.Text = bil1 - bil2
-        txtkembali.Text = Format(CDec(txtkembali.Text), "##,##0.00")
+        txtbelanja.Text = Format(xtotal)
     End Sub
 
     Private Sub txtbayar_KeyPress(sender As Object, e As KeyPressEventArgs)
@@ -200,7 +140,7 @@ Public Class transaksipenjualan1
         If Not IsNumeric(Trim(txtharga.Text)) Then
             txtharga.Text = 0
         End If
-        txtharga.Text = Format(CDec(txtharga.Text), "##,##0.00")
+        'txtharga.Text = Format(CDec(txtharga.Text), "##,##0.00")
     End Sub
     '================================[ PRINT AREA ]================================
     Sub ubahpanjang()
@@ -216,15 +156,103 @@ Public Class transaksipenjualan1
         menu1.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Hide()
-        login.Show()
-    End Sub
-
-    Private Sub txtprint_Click(sender As Object, e As EventArgs)
+    Private Sub txtprint_Click(sender As Object, e As EventArgs) Handles txtprint.Click
         ubahpanjang()
         PPD.Document = PD
         PPD.ShowDialog()
+    End Sub
+
+    Private Sub btnclear_Click(sender As Object, e As EventArgs) Handles btnclear.Click
+        clearall()
+        txtidbarang.Select()
+    End Sub
+
+    Private Sub btnkembali_Click(sender As Object, e As EventArgs) Handles btnkembali.Click
+        txtkembali.Text = Val(txtbayar.Text) - Val(txtbelanja.Text)
+
+    End Sub
+
+    Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
+        If txtpemesan.Text = "" Or ComboBox1.Text = "" Then
+            MessageBox.Show("Harap cek nama 'PELAYAN' dan nama 'PEMESAN' tidak boleh kosong !!!", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Dim cmdOpen As New SqlCommand
+
+        If conn.State = ConnectionState.Open Then conn.Close()
+        conn.Open()
+        cmdOpen.Connection = conn
+        query = "SELECT * FROM Penjualan WHERE id_penjualan = '" & Trim(txtid.Text) & "'"
+        cmdOpen.CommandText = query
+        cmdOpen.ExecuteNonQuery()
+
+        Dim drOpen As SqlDataReader = cmdOpen.ExecuteReader
+        If drOpen.HasRows Then
+            query = "UPDATE Penjualan SET " &
+                    "pengguna = '" & Trim(ComboBox1.Text) & "'," &
+                    "tanggal = '" & Format(DateTimePicker1.Value, "yyyy-MM-dd") & "'," &
+                    "pemesan = '" & Trim(txtpemesan.Text) & "'," &
+                    "id_menu = '" & Trim(txtidbarang.Text) & "'," &
+                    "qty = " & CInt(Trim(txtqty.Text)) & "," &
+                    "harga = " & CDbl(Trim(txtharga.Text)) & "," &
+                    "total = " & CDbl(Trim(txttotal.Text)) & "," &
+                    "bayar = " & CDbl(Trim(txtbayar.Text)) & "," &
+                    "kembali = " & CDbl(Trim(txtkembali.Text)) &
+                    "WHERE id_penjualan = '" & Trim(txtid.Text) & "'"
+        Else
+            query = "INSERT INTO Penjualan VALUES('" & Trim(txtid.Text) & "', 
+                    '" & Trim(ComboBox1.Text) & "',
+                    '" & Format(DateTimePicker1.Value, "yyyy-MM-dd") & "',
+                    '" & Trim(txtpemesan.Text) & "',
+                    '" & Trim(txtidbarang.Text) & "', 
+                    " & CInt(Trim(txtqty.Text)) & ", 
+                    " & CDbl(Trim(txtharga.Text)) & ",
+                    " & CDbl(Trim(txttotal.Text)) & ",
+                    " & CDbl(Trim(txtbayar.Text)) & ",
+                    " & CDbl(Trim(txtkembali.Text)) & ")"
+        End If
+        drOpen.Close()
+        cmdOpen.CommandText = query
+        cmdOpen.ExecuteNonQuery()
+
+        'UPDATE STOK DI FORM MENU
+        Using cnn = New SqlConnection
+            cnn.ConnectionString = "Data Source=AURELIO\ACERNITRO ; Initial Catalog=UAS_Kel9 ; Integrated Security=True ; Encrypt=False"
+
+            Using cmdX As New SqlCommand
+                cnn.Open()
+                cmdX.Connection = cnn
+                query = "SELECT * FROM Penjualan WHERE id_penjualan = '" & Trim(txtid.Text) & "'"
+                cmdX.CommandText = query
+                cmdX.ExecuteNonQuery()
+
+                Using drX As SqlDataReader = cmdX.ExecuteReader
+                    If drX.HasRows Then
+                        While drX.Read
+                            cmdOpen.CommandText = "UPDATE Menu SET stok = stok - " & drX("qty") &
+                                                  "WHERE id_menu = '" & drX("id_menu") & "'"
+                            cmdOpen.ExecuteNonQuery()
+                        End While
+                    End If
+                    drX.Close()
+                End Using
+            End Using
+        End Using
+
+        conn.Close()
+        MessageBox.Show("Data berhasil disimpan ke database !!!")
+        cleardetailbarang()
+        txtidbarang.Select()
+    End Sub
+
+    Private Sub btnhitung_Click(sender As Object, e As EventArgs) Handles btnhitung.Click
+        txttotal.Text = Val(txtqty.Text) * Val(txtharga.Text)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        login.Show()
     End Sub
     Private Sub PD_BeginPrint(sender As Object, e As PrintEventArgs) Handles PD.BeginPrint
         Dim pagesetup As New PageSettings
@@ -305,87 +333,49 @@ Public Class transaksipenjualan1
         tqty = hitungqty
     End Sub
 
-    Private Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
-        If txtpemesan.Text = "" Or ComboBox1.Text = "" Then
-            MessageBox.Show("Harap cek nama 'PELAYAN' dan nama 'PEMESAN' tidak boleh kosong !!!", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
+    Private Sub txtidbarang_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtidbarang.KeyPress
+        If (e.KeyChar = Chr(13)) Then
+            If txtidbarang.Text = "" Then
+                MessageBox.Show("Isi terlebih dahulu Id Barang!!!", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Else
+                Dim cmdOpen As New SqlCommand
+
+                If conn.State = ConnectionState.Open Then conn.Close()
+                conn.Open()
+                cmdOpen.Connection = conn
+
+                query = "SELECT * FROM Menu WHERE id_menu = '" & txtidbarang.Text & "'"
+                cmdOpen.CommandText = query
+                cmdOpen.ExecuteNonQuery()
+
+                Dim drOpen As SqlDataReader = cmdOpen.ExecuteReader
+
+                If drOpen.Read Then
+                    kode = drOpen.Item("id_menu")
+                    txtnama.Text = drOpen.Item("nama")
+                    txtqty.Text = drOpen.Item("stok")
+                    jumlah = 1
+                    'txtharga.Text = drOpen.Item("harga")
+                    harga = drOpen.Item("harga")
+                    'txttotal.Text = jumlah * harga
+                    total = jumlah * harga
+
+                    txtqty.Text = jumlah
+                    txtharga.Text = harga
+                    txttotal.Text = total
+
+                    txtqty.Focus()
+                Else
+                    MessageBox.Show("Id Barang tersebut tidak ada di dalam database!!!", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    txtidbarang.Text = ""
+                End If
+            End If
         End If
-
-        Dim cmdOpen As New SqlCommand
-
-        If conn.State = ConnectionState.Open Then conn.Close()
-        conn.Open()
-        cmdOpen.Connection = conn
-        query = "SELECT * FROM Penjualan WHERE id_penjualan = '" & Trim(txtid.Text) & "'"
-        cmdOpen.CommandText = query
-        cmdOpen.ExecuteNonQuery()
-
-        Dim drOpen As SqlDataReader = cmdOpen.ExecuteReader
-        If drOpen.HasRows Then
-            query = "UPDATE Penjualan SET " &
-                    "pengguna = '" & Trim(ComboBox1.Text) & "'," &
-                    "tanggal = '" & Format(DateTimePicker1.Value, "yyyy-MM-dd") & "'," &
-                    "pemesan = '" & Trim(txtpemesan.Text) & "'," &
-                    "id_menu = '" & Trim(txtidbarang.Text) & "'," &
-                    "qty = " & CInt(Trim(txtqty.Text)) & "," &
-                    "harga = " & CDbl(Trim(txtharga.Text)) & "," &
-                    "total = " & CDbl(Trim(txttotal.Text)) & "," &
-                    "bayar = " & CDbl(Trim(txtbayar.Text)) & "," &
-                    "kembali = " & CDbl(Trim(txtkembali.Text)) &
-                    "WHERE id_penjualan = '" & Trim(txtid.Text) & "'"
-        Else
-            query = "INSERT INTO Penjualan VALUES('" & Trim(txtid.Text) & "', 
-                    '" & Trim(ComboBox1.Text) & "',
-                    '" & Format(DateTimePicker1.Value, "yyyy-MM-dd") & "',
-                    '" & Trim(txtpemesan.Text) & "',
-                    '" & Trim(txtidbarang.Text) & "', 
-                    " & CInt(Trim(txtqty.Text)) & ", 
-                    " & CDbl(Trim(txtharga.Text)) & ",
-                    " & CDbl(Trim(txttotal.Text)) & ",
-                    " & CDbl(Trim(txtbayar.Text)) & ",
-                    " & CDbl(Trim(txtkembali.Text)) & ")"
-        End If
-        drOpen.Close()
-        cmdOpen.CommandText = query
-        cmdOpen.ExecuteNonQuery()
-
-        'UPDATE STOK DI FORM MENU
-        Using cnn = New SqlConnection
-            cnn.ConnectionString = "Data Source=AURELIO\ACERNITRO ; Initial Catalog=UAS_Kel9 ; Integrated Security=True ; Encrypt=False"
-
-            Using cmdX As New SqlCommand
-                cnn.Open()
-                cmdX.Connection = cnn
-                query = "SELECT * FROM Penjualan WHERE id_penjualan = '" & Trim(txtid.Text) & "'"
-                cmdX.CommandText = query
-                cmdX.ExecuteNonQuery()
-
-                Using drX As SqlDataReader = cmdX.ExecuteReader
-                    If drX.HasRows Then
-                        While drX.Read
-                            cmdOpen.CommandText = "UPDATE Menu SET stok = stok - " & drX("qty") &
-                                                  "WHERE id_menu = '" & drX("id_menu") & "'"
-                            cmdOpen.ExecuteNonQuery()
-                        End While
-                    End If
-                    drX.Close()
-                End Using
-            End Using
-        End Using
-
-        conn.Close()
-        MessageBox.Show("Data berhasil disimpan ke database !!!")
-        cleardetailbarang()
-        txtidbarang.Select()
     End Sub
-    Private Sub GroupBox2_MouseClick(sender As Object, e As MouseEventArgs)
+
+    Private Sub GroupBox4_MouseClick(sender As Object, e As MouseEventArgs) Handles GroupBox4.MouseClick
         input()
         hitung()
-    End Sub
-
-    Private Sub btnclear_Click(sender As Object, e As EventArgs)
-        clearall()
-        txtidbarang.Select()
     End Sub
 
     'Private Sub btnpower_Click(sender As Object, e As EventArgs) Handles btnpower.Click

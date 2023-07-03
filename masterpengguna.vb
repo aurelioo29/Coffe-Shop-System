@@ -84,10 +84,10 @@ Public Class masterpengguna
 
         Dim drOpen As SqlDataReader = cmdOpen.ExecuteReader
         If drOpen.HasRows Then
-            query = "UPDATE Pengguna SET" &
+            query = "UPDATE Pengguna SET " &
                     "username= '" & Trim(txtUsername.Text) & "'," &
                     "password= '" & Trim(txtPw.Text) & "'," &
-                    "jabatan= '" & Trim(txtJabatan.Text) &
+                    "jabatan= '" & Trim(txtJabatan.Text) & "'" &
                     "WHERE id_pengguna = '" & Trim(txtId.Text) & "'"
         Else
             query = "INSERT INTO Pengguna VALUES ('" & Trim(txtId.Text) & "',
